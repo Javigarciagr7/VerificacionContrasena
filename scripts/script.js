@@ -3,7 +3,7 @@
 function verificarContrasena() {
     const contraseña = document.getElementById("passwordInput").value;
 
-    if (contraseña.length < 8 && !/[A-Z]/.test(contraseña) && !/[@#~]/.test(contraseña)) {
+    if (contraseña.length < 8 && !/[A-Z]/.test(contraseña) && !/[@#~]/.test(contraseña) && /^\S*$/) {
         alert("La contraseña no es valida");
         //En caso de querer hacerlo con un parrafo en vez de alert
         //document.getElementByYd("mensaje").innerHTML="La contraseña no es valida";
